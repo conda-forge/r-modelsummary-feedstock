@@ -28,25 +28,25 @@ requirements:
     - r-base
     - r-broom
     - r-checkmate
+    - r-data.table
     - r-generics
     - r-glue
-    - r-insight
+    - r-insight >=0.16.1
     - r-kableextra >=1.2.1
-    - r-parameters
+    - r-parameters >=0.17.0
     - r-performance
-    - r-rlang
     - r-tables
   run:
     - r-base
     - r-broom
     - r-checkmate
+    - r-data.table
     - r-generics
     - r-glue
-    - r-insight
+    - r-insight >=0.16.1
     - r-kableextra >=1.2.1
-    - r-parameters
+    - r-parameters >=0.17.0
     - r-performance
-    - r-rlang
     - r-tables
 
 test:
