@@ -1,11 +1,11 @@
-About r-modelsummary
-====================
+About r-modelsummary-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-modelsummary-feedstock/blob/main/LICENSE.txt)
 
 Home: https://vincentarelbundock.github.io/modelsummary/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-modelsummary-feedstock/blob/main/LICENSE.txt)
 
 Summary: Create beautiful and customizable tables to summarize several statistical models side-by-side. Draw coefficient plots, multi-level cross-tabs, dataset summaries, balance tables (a.k.a. "Table 1s"), and correlation matrices. This package supports dozens of statistical models, and it can produce tables in HTML, LaTeX, Word, Markdown, PDF, PowerPoint, Excel, RTF, JPG, or PNG. Tables can easily be embedded in 'Rmarkdown' or 'knitr' dynamic documents.
 
