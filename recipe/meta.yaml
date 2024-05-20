@@ -1,4 +1,4 @@
-{% set version = "1.4.3" %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/modelsummary_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/modelsummary/modelsummary_{{ version }}.tar.gz
-  sha256: 8a2e5a3e116a5bd47c698c805640fdac12e8e9d15c63101f01b405fcf269a46a
+  sha256: c719e61e06ee11b3f8c41b5d0e419d5a86e3b2c43863920c953d289b65592406
 
 build:
   merge_build_host: true  # [win]
@@ -26,28 +26,26 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-broom
-    - r-checkmate
-    - r-data.table
+    - r-checkmate >=2.3.1
+    - r-data.table >=1.15.2
     - r-generics
     - r-glue
-    - r-insight >=0.16.1
-    - r-kableextra >=1.2.1
-    - r-parameters >=0.17.0
-    - r-performance
-    - r-tables
+    - r-insight >=0.19.11
+    - r-parameters >=0.21.7
+    - r-performance >=0.11.0
+    - r-tables >=0.9.17
+    - r-tinytable >=0.3.0
   run:
     - r-base
-    - r-broom
-    - r-checkmate
-    - r-data.table
+    - r-checkmate >=2.3.1
+    - r-data.table >=1.15.2
     - r-generics
     - r-glue
-    - r-insight >=0.16.1
-    - r-kableextra >=1.2.1
-    - r-parameters >=0.17.0
-    - r-performance
-    - r-tables
+    - r-insight >=0.19.11
+    - r-parameters >=0.21.7
+    - r-performance >=0.11.0
+    - r-tables >=0.9.17
+    - r-tinytable >=0.3.0
 
 test:
   commands:
@@ -65,5 +63,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - izahn
     - conda-forge/r
+    - izahn
