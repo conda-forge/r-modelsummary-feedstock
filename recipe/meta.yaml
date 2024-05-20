@@ -26,28 +26,26 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-broom
-    - r-checkmate
-    - r-data.table
+    - r-checkmate >=2.3.1
+    - r-data.table >=1.15.2
     - r-generics
     - r-glue
-    - r-insight >=0.16.1
-    - r-kableextra >=1.2.1
-    - r-parameters >=0.17.0
-    - r-performance
-    - r-tables
+    - r-insight >=0.19.11
+    - r-parameters >=0.21.7
+    - r-performance >=0.11.0
+    - r-tables >=0.9.17
+    - r-tinytable >=0.3.0
   run:
     - r-base
-    - r-broom
-    - r-checkmate
-    - r-data.table
+    - r-checkmate >=2.3.1
+    - r-data.table >=1.15.2
     - r-generics
     - r-glue
-    - r-insight >=0.16.1
-    - r-kableextra >=1.2.1
-    - r-parameters >=0.17.0
-    - r-performance
-    - r-tables
+    - r-insight >=0.19.11
+    - r-parameters >=0.21.7
+    - r-performance >=0.11.0
+    - r-tables >=0.9.17
+    - r-tinytable >=0.3.0
 
 test:
   commands:
@@ -65,5 +63,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - izahn
     - conda-forge/r
+    - izahn
