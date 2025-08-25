@@ -1,4 +1,4 @@
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/modelsummary_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/modelsummary/modelsummary_{{ version }}.tar.gz
-  sha256: 7bac6ce83b373108fcb835e1a750c2e3def5fda4a91fa6ba3b93835be9f13cec
+  sha256: 9629b42e407d08623cd89655034ff31c5cb05bacd292cf88871258dbdecef790
 
 build:
   number: 0
